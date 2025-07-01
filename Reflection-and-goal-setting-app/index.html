@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Moments - Reflection & Goal Setting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mindful Moments</h1>
+            <p>Your personal space for reflection and growth</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="reflection-section" class="card">
+            <h2><i class="fas fa-brain"></i> Daily Reflection</h2>
+            <div class="form-group">
+                <label for="reflection-input">How was your day? What did you learn?</label>
+                <textarea id="reflection-input" rows="5" placeholder="Today I felt... I learned that..."></textarea>
+            </div>
+            <button id="analyze-reflection" class="btn">
+                <i class="fas fa-lightbulb"></i> Get Insights
+            </button>
+            <div id="reflection-analysis" class="hidden analysis-result"></div>
+        </section>
+
+        <section id="goals-section" class="card">
+            <h2><i class="fas fa-bullseye"></i> Goal Setting</h2>
+            <div class="form-group">
+                <label for="goal-input">What would you like to achieve?</label>
+                <textarea id="goal-input" rows="3" placeholder="I want to... My goal is to..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="timeframe">Timeframe:</label>
+                <select id="timeframe">
+                    <option value="short-term">Short-term (this week)</option>
+                    <option value="medium-term">Medium-term (this month)</option>
+                    <option value="long-term">Long-term (this year)</option>
+                </select>
+            </div>
+            <button id="plan-goal" class="btn">
+                <i class="fas fa-magic"></i> Create Action Plan
+            </button>
+            <div id="goal-plan" class="hidden analysis-result"></div>
+        </section>
+
+        <section id="history-section" class="card">
+            <h2><i class="fas fa-history"></i> Your History</h2>
+            <div id="entries-container">
+                <p>Your reflections and goals will appear here</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Powered by Gemini 2.5 Flash API</p>
+        </div>
+    </footer>
+
+    <!-- <div id="loading-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="loader"></div>
+            <p>Generating insights...</p>
+        </div>
+    </div> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
